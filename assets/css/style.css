@@ -1,0 +1,765 @@
+﻿
+/*=============================================================
+    Authour URL: www.designbootstrap.com
+
+    http://www.designbootstrap.com/
+
+    License: MIT
+
+    http://opensource.org/licenses/MIT
+
+    100% Free To use For Personal And Commercial Use.
+
+    IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
+
+========================================================  */
+
+
+
+/*================================
+    GENERAL STYLES
+==================================*/
+
+a:focus {
+    outline: none !important;
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+section#colofon {
+	padding-bottom: 1px;
+}
+
+
+section#wpf {
+	padding-bottom: 0;
+}
+
+section#doemee {
+	padding-top: 20px;
+}
+
+.head-set {
+    padding-top: 20px;
+    padding-bottom: 40px; /* h2 met lijn eronder */
+}
+
+h4.head-set {
+	padding-bottom: 1em;
+	margin-bottom: 0;
+}
+
+#colofon h4.head-set {
+	padding: 0;
+	margin: 80px 0  20px 0;
+	font-size: 18pt;
+}
+#colofon h4.head-set a {
+	text-decoration: none !important;
+}
+
+#colofon h4::before {
+  background: #ffffff none repeat scroll 0 0;
+  top: 20px;
+  content: "";
+  height: 1px;
+  left: calc(50% - 50px);
+  position: absolute;
+  width: 100px;
+}
+
+.pad-bottom {
+    padding-bottom: 60px;
+}
+/*================================
+    NAVBAR STYLES
+==================================*/
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff;
+}
+
+    .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover {
+        color: #fff;
+    }
+
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color:#fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color:#004b8c;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar ,
+.navbar-default .navbar-toggle:active .icon-bar ,
+{
+    background-color: white;
+}
+
+
+/* to do !!!! */
+
+.nav > li {
+  background: white;
+  border-bottom: 0px solid transparent;
+  display: block;
+  position: relative;
+  margin-bottom: 1px;
+}
+
+.nav > li {
+	font-weight: bold;
+	font-size: 13pt;
+}
+
+.nav > li.nav1 a ,
+.nav > li.nav1 a:focus ,
+.nav > li.nav1 a:active
+{
+	color: #a0ebff;
+}
+.nav > li.nav2 a ,
+.nav > li.nav2 a:hover ,
+.nav > li.nav2 a:focus ,
+.nav > li.nav2 a:active
+{
+	color: #fae337;
+}
+.nav > li.nav3 a ,
+.nav > li.nav3 a:hover ,
+.nav > li.nav3 a:focus ,
+.nav > li.nav3 a:active
+{
+	color: #3cd2af;
+}
+.nav > li.nav4 a ,
+.nav > li.nav4 a:hover ,
+.nav > li.nav4 a:focus ,
+.nav > li.nav4 a:active
+{
+	color: #fa786e;
+}
+.nav > li.nav5 a ,
+.nav > li.nav5 a:hover ,
+.nav > li.nav5 a:focus ,
+.nav > li.nav5 a:active
+{
+	color: #ff961e;
+}
+
+.nav > li.nav1 a:hover ,
+.nav > li.nav2 a:hover ,
+.nav > li.nav3 a:hover ,
+.nav > li.nav4 a:hover ,
+.nav > li.nav5 a:hover
+{
+	color: #004b8c;
+}
+
+.nav.navbar-nav {
+	max-width: 240px;
+}
+
+.navbar-toggle {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  float: left;
+  margin-bottom: 8px;
+  margin-left: 15px;
+  margin-top: 8px;
+  padding: 9px 10px;
+  position: relative;
+}
+
+.navbar-default .navbar-toggle:hover ,
+.navbar-default .navbar-toggle:active ,
+.navbar-default .navbar-toggle:focus
+ {
+	background: transparent;
+}
+
+.navbar-collapse {
+  border-top: 0px solid rgba(0, 0, 0, 0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/*================================
+    HOME SECTION STYLES
+==================================*/
+
+/*STYLE OF BACKGROUND IMAGE*/
+#home {
+    background: #fac8c8;
+    padding: 0;
+}
+    /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
+    #home .overlay {
+        color: white;
+    }
+
+    #home h1 ,
+    #nieuws h1
+    {
+        padding-top: 80px;
+		  padding-bottom: 80px;
+        font-weight: 900;
+        font-size: 60pt;
+    }
+/*SMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+/*CLASS TO FORMAT TEXT*/
+.p-cls {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+/*======================================
+    PARALLAX LIKE / STATS SECTION STYLES
+=========================================*/
+
+.parallax-like {
+    background: url(../img/stats.jpg) no-repeat center center; /* DEFINE IMAGE PATH CAREFULLY*/
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+    .parallax-like .overlay {
+        min-height: 200px;
+        background: rgba(35, 133, 161,0.9);
+        font-size: 40px;
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
+/*================================
+    PORTFOLIO / WORK SECTION STYLES
+==================================*/
+.portfolio-item img:hover { /* POSTFOLIO IMAGE BIG ON HOVER */
+    cursor: pointer;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    z-index: 1;
+}
+
+/*================================
+    VIDEO SECTION STYLES
+==================================*/
+#video-sec {
+    color: #fff;
+    text-align: center;
+}
+
+    #video-sec .overlay {
+        background-color: rgba(0, 0, 0, 0.85);
+        min-height: 300px;
+        color: #fff;
+    }
+
+    #video-sec h1 {
+        padding-top: 80px;
+        font-size: 50px;
+        font-weight: 900;
+        padding-bottom: 30px;
+    }
+/*================================
+    CLIENTS SECTION STYLES
+==================================*/
+#clients {
+    background-color:#f4f4f4;
+    padding-bottom:50px;
+    padding-top:50px;
+}
+    #clients img {
+        opacity:0.5;
+        cursor:pointer;
+    }
+        #clients img:hover {
+            opacity:1;
+        }
+/*================================
+    FOOTER SECTION STYLES
+==================================*/
+
+footer {
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 900;
+    background-color: white;
+    color: white;
+    min-height: 200px;
+}
+
+    footer a, footer a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+/* activiteiten */
+
+#activiteiten {
+    background: #fae337;
+}
+
+#activiteiten > .overlay {
+	padding-bottom: 60px;
+}
+
+#activiteiten .col-xs-12 {
+	padding: 1px 10px;
+}
+
+h2 {
+        font-size: 60pt;
+        color: white;
+        font-weight: bold;
+    }
+
+h2:after {
+  content:"";
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 50px);
+  height: 1px;
+  width: 100px;
+}
+
+.hovereffect {
+  width: 100%;
+  /* height: 100%; */
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #3cd2af;
+  margin-top: 15px;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.xxhovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect:hover img {
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h3 {
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  font-weight: bold;
+  padding: 2em 0 0 0;
+  margin-bottom: 10px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h3 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect a:hover {
+	color: #004b8c;
+	text-decoration: none;
+}
+
+/* grote foto */
+
+#wpf ,
+#doemee
+{
+	background: #3cd2af;
+}
+
+#nieuws
+{
+	background: #fa786e;
+	font-size: 14pt;
+}
+
+#pers {
+	background: #ff961e;
+}
+
+#colofon {
+	background: #cdd2e6;
+}
+
+#waaromwatwie {
+	background: #a0ebff;
+	font-size: 14pt;
+}
+
+#doemee .container ,
+#pers .container ,
+#nieuws .container ,
+#colofon .container ,
+#waaromwatwie .container ,
+#waaromwatwie .container a
+{
+	color: white;
+}
+
+#doemee .container h4 ,
+#nieuws .container h4 ,
+#waaromwatwie .container h4
+{
+	font-size: 24pt;
+	font-weight: bold;
+}
+
+#pers .container h4
+{
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+#doemee .container p ,
+#nieuws .container p
+{
+	font-size: 14pt;
+}
+
+#pers .container p ,
+#colofon .container p ,
+#colofon .container h5 ,
+{
+	font-size: 12pt;
+	font-weight: normal;
+}
+
+#colofon .container p {
+	margin: 0;
+	padding: 0;
+}
+
+#colofon .container h5 {
+	margin: 2em 0 0 0;
+	padding: 0;
+}
+
+svg {
+	width: 50%;
+	max-width: 120px;
+	max-height: 120px;
+}
+
+#doemee a ,
+#nieuws a ,
+#pers a ,
+#colofon a
+{
+	display: inline-block;
+	color: white;
+}
+
+#colofon a
+{
+	font-weight: bold;
+}
+#colofon a.footerlink {
+	font-weight: normal;
+	margin-bottom: 2em;
+}
+
+.st0{ fill:#FFFFFF; }
+
+#doemee a:hover ,
+#nieuws a:hover ,
+#pers a:hover ,
+#colofon a:hover ,
+#waaromwatwie a:hover
+{
+	color: #004b8c !important;
+	text-decoration: none;
+}
+
+#doemee a:hover .st0 ,
+#nieuws a:hover .st0 ,
+#colofon a:hover .st0 ,
+#colofon a:hover .st1
+{
+	fill: #004b8c;
+}
+#colofon a:hover .st0{fill:#004b8c;}
+#colofon a:hover .st1{fill:none;stroke:#004b8c;stroke-width:0.645;stroke-miterlimit:10;}
+#colofon a:hover .st2{fill:none;stroke:#004b8c;stroke-width:0.997;stroke-dasharray:2.963,1.966;}
+#colofon a:hover .st3{fill:none;stroke:#004b8c;stroke-width:0.161;}
+#colofon a:hover .st4{fill:#004b8c;}
+#colofon a:hover .st5{fill:none;stroke:#004b8c;stroke-width:0.161;}
+#colofon a:hover .st6{fill:#004b8c;}
+#colofon a:hover .st7{fill:none;stroke:#004b8c;stroke-width:0.161;}
+#colofon a:hover .st8{fill:#004b8c;}
+#colofon a:hover .st9{fill:#004b8c;}
+#colofon a:hover .st10{fill:#004b8c;}
+#colofon a:hover .st11{fill:none;stroke:#004b8c;stroke-width:0.161;}
+
+#colofon a:hover .pcl.st0{fill:#004b8c;}
+#colofon a:hover .pcl.st1{fill:#004b8c;}
+#colofon a:hover .pcl.st2{fill:#004b8c;}
+#colofon a:hover .pcl.st3{fill:#CED2E6;}
+#colofon a:hover .pcl.st4{fill:none;stroke:#004b8c;stroke-width:0.366;stroke-miterlimit:2.613;}
+#colofon a:hover .pcl.st5{fill:#004b8c;}
+
+#colofon svg {
+	margin-bottom: 1em;
+	min-height: 80px;
+}
+
+.readmore {
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+#waaromwatwie  a.contentlink{
+  font-weight: bold;
+  color:  #fac8c8;
+}
+
+#imgWPF {
+	background: url(../img/wpf-group.jpg) no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+@media (max-width: 920px) {
+	#home h1 ,
+	#nieuws h1 ,
+	h2
+	{
+		font-size: 54pt;
+	}
+
+	/* slideshow hacken */
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+	    position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+
+	  height: 100%;
+	  width: auto;
+	  max-width: none;
+		}
+		.carousel-inner > .item {
+	  height: 100vh;
+	  width: 100vw;
+	  overflow: hidden;
+	  }
+	  .carousel-inner > .item.active {
+	  height: 100vh;
+	  width: 100vw;
+	  overflow: hidden;
+	  }
+
+
+}
+
+
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+
+/*
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+*/
+
+@media (max-width: 767px) {
+	#home h1 ,
+	#nieuws h1 ,
+	h2
+	{
+		font-size: 44pt;
+	}
+	svg {
+		width: 50%;
+		max-width: 80px
+		max-height: 80px;
+	}
+	#colofon h4::before {
+	  top: -40px;
+	}
+}
+
+@media (max-width: 600px) {
+	#home h1 ,
+#nieuws h1 ,
+	h2
+	{
+		font-size: 36pt;
+	}
+	.hovereffect h3 {
+		padding-top: 0;
+	}
+	#doemee .container h4, #nieuws .container h4, #waaromwatwie .container h4 {
+	  font-size: 18pt;
+	  font-weight: bold;
+	}
+}
+
+@media (max-width: 480px) {
+	#home h1 ,
+#nieuws h1 ,
+	h2
+	{
+		font-size: 30pt;
+	}
+}
+
+@media (max-width: 400px) {
+	#home h1 ,
+	#nieuws h1 ,
+	h2
+	{
+		font-size: 24pt;
+	}
+}
+
+.glyphicon-chevron-left::before {
+  content: "";
+}
+
+.glyphicon-chevron-right::before {
+  content: "";
+}
+
+.carousel-control.right ,
+.carousel-control.left
+{
+  background: none;
+}
+
+.carousel-indicators li {
+  border-radius: 8px;
+  height: 8px;
+  width: 8px;
+}
+
+.carousel-indicators li.active {
+  border-radius: 10px;
+  height: 10px;
+  width: 10px;
+}
+
+
