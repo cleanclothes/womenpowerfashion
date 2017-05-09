@@ -51,6 +51,10 @@ section#doemee {
     padding-bottom: 40px; /* h2 met lijn eronder */
 }
 
+p.head-set {
+	color: white;
+}
+
 h4.head-set {
 	padding-bottom: 1em;
 	margin-bottom: 0;
@@ -123,38 +127,43 @@ h4.head-set {
 	font-weight: bold;
 	font-size: 13pt;
 }
-
 .nav > li.nav1 a ,
 .nav > li.nav1 a:focus ,
 .nav > li.nav1 a:active
 {
-	color: #a0ebff;
+	color: #fac8c8;
 }
 .nav > li.nav2 a ,
-.nav > li.nav2 a:hover ,
 .nav > li.nav2 a:focus ,
 .nav > li.nav2 a:active
 {
-	color: #fae337;
+	color: #004B8C;
 }
 .nav > li.nav3 a ,
 .nav > li.nav3 a:hover ,
 .nav > li.nav3 a:focus ,
 .nav > li.nav3 a:active
 {
-	color: #3cd2af;
+	color: #fae337;
 }
 .nav > li.nav4 a ,
 .nav > li.nav4 a:hover ,
 .nav > li.nav4 a:focus ,
 .nav > li.nav4 a:active
 {
-	color: #fa786e;
+	color: #3cd2af;
 }
 .nav > li.nav5 a ,
 .nav > li.nav5 a:hover ,
 .nav > li.nav5 a:focus ,
 .nav > li.nav5 a:active
+{
+	color: #fa786e;
+}
+.nav > li.nav6 a ,
+.nav > li.nav6 a:hover ,
+.nav > li.nav6 a:focus ,
+.nav > li.nav6 a:active
 {
 	color: #ff961e;
 }
@@ -163,7 +172,8 @@ h4.head-set {
 .nav > li.nav2 a:hover ,
 .nav > li.nav3 a:hover ,
 .nav > li.nav4 a:hover ,
-.nav > li.nav5 a:hover
+.nav > li.nav5 a:hover ,
+.nav > li.nav6 a:hover
 {
 	color: #004b8c;
 }
@@ -214,6 +224,7 @@ h4.head-set {
     }
 
     #home h1 ,
+    #petitie h1 ,
     #nieuws h1
     {
         padding-top: 80px;
@@ -448,12 +459,19 @@ h2:after {
 	text-decoration: none;
 }
 
+
+
+
 /* grote foto */
 
 #wpf ,
 #doemee
 {
 	background: #3cd2af;
+}
+
+#petitie {
+	background: #ff961e;
 }
 
 #nieuws
@@ -471,12 +489,14 @@ h2:after {
 }
 
 #waaromwatwie {
-	background: #a0ebff;
+	background: #004B8C;
 	font-size: 14pt;
 }
 
+
 #doemee .container ,
 #pers .container ,
+#petitie .container ,
 #nieuws .container ,
 #colofon .container ,
 #waaromwatwie .container ,
@@ -499,6 +519,12 @@ h2:after {
 	font-weight: bold;
 }
 
+#petitie .container h4
+{
+	font-size: 18pt;
+	font-weight: bold;
+}
+#petitie .container p ,
 #doemee .container p ,
 #nieuws .container p
 {
@@ -552,11 +578,17 @@ svg {
 #doemee a:hover ,
 #nieuws a:hover ,
 #pers a:hover ,
-#colofon a:hover ,
-#waaromwatwie a:hover
+#petitie a:hover ,
+#colofon a:hover 
 {
 	color: #004b8c !important;
 	text-decoration: none;
+}
+
+#waaromwatwie a:hover
+{
+	color: #white !important;
+	text-decoration: underline;
 }
 
 #doemee a:hover .st0 ,
@@ -611,7 +643,7 @@ svg {
 }
 
 @media (max-width: 920px) {
-	#home h1 ,
+	#home  ,
 	#nieuws h1 ,
 	h2
 	{
